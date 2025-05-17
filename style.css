@@ -1,0 +1,106 @@
+:root {
+  --primary-color: #4635b1; /* Judul, nama */
+  --second-color: #b771e5; /* Tombol & hover */
+  --third-color: #aeea94; /* CTA / Aksi kuat */
+  --fourth-color: #fffbca; /* Footer / background soft */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  padding: 20px 30px;
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+nav .logo h1 {
+  font-size: 25px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+nav .button-contact {
+  border: none;
+  padding: 15px 20px;
+  margin: 20px;
+  background-color: var(--second-color);
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+nav .button-contact:haver {
+  background-color: var(--primary-color);
+}
+
+main {
+  display: flex;
+  align-items: center;
+}
+
+main .content h1 {
+  font-size: 50px;
+  color: var(--primary-color);
+  
+}
+
+main .content h3 {
+  font-size: 30px;
+  color: var(--second-color);
+}
+
+main .content {
+  color: #222;
+  margin: 100px;
+}
+
+main .image img{
+  width: 500px;
+  border-radius: 20px;
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--fourth-color);
+  padding: 20px 30px;
+  margin: 50px 10px;
+}
+
+footer h4 {
+  color: var(--primary-color)
+}
